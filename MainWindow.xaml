@@ -1,0 +1,59 @@
+﻿<Window x:Class="FileConcept.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileConcept"
+        mc:Ignorable="d"
+        Title="Notepad" Height="350" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <DockPanel Margin="0,-1,0,10" Grid.RowSpan="2">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem x:Name="new" Header=" New Tab" Click="new_Click" ></MenuItem>
+                    <MenuItem Header="New Window"></MenuItem>
+                    <MenuItem x:Name="open" Header=" open" Click="open_Click"></MenuItem>
+                    <MenuItem Header=" save"></MenuItem>
+                    <MenuItem x:Name="saveas" Header=" Save As" Click="saveas_Click"></MenuItem>
+                    <MenuItem Header=" Save All"></MenuItem>
+                    <MenuItem Header=" Page Setup"></MenuItem>
+                    <MenuItem Header=" Print"></MenuItem>
+                    <MenuItem Header=" CloseTab"></MenuItem>
+                    <MenuItem Header=" CloseWindow"></MenuItem>
+                    <MenuItem x:Name="exit" Header=" Exit" Click="exit_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header=" Undo"></MenuItem>
+                    <MenuItem Header=" cut"></MenuItem>
+                    <MenuItem Header=" Copy"></MenuItem>
+                    <MenuItem Header=" paste"></MenuItem>
+                    <MenuItem Header=" delete"></MenuItem>
+                    <MenuItem Header=" Find"></MenuItem>
+                    <MenuItem Header="  Find Next"></MenuItem>
+                    <MenuItem Header=" Find Previous"></MenuItem>
+                    <MenuItem Header=" Go To "></MenuItem>
+                    <MenuItem Header=" Select All"></MenuItem>
+
+                </MenuItem>
+
+                <MenuItem Header="View">
+                    <MenuItem Header=" Zoom"></MenuItem>
+                    <MenuItem Header=" Status Bar"></MenuItem>
+                </MenuItem>
+
+
+
+
+            </Menu>
+       
+
+        <TextBox x:Name="txtContent" AcceptsReturn="True"   Height="1000" ></TextBox>
+        </DockPanel>
+
+    </Grid>
+   </Window>
